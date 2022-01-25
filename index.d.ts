@@ -63,7 +63,7 @@ declare module 'warframe-items' {
         patchlogs?: PatchLog[];
         channeling?: number;
         ammo?: number | null;
-        damage?: number | string;
+        damage?: DamageTypes;
         damageTypes?: DamageTypes;
         marketCost?: number | '';
         bpCost?: number | '';
@@ -182,7 +182,7 @@ declare module 'warframe-items' {
         omegaAttenuation?: number;
         ammo?: number | null;
         chargeTime?: number;
-        damage?: number | string;
+        damage?: DamageTypes;
         damageTypes?: DamageTypes;
         flight?: number;
         marketCost?: number | '';
@@ -352,7 +352,8 @@ declare module 'warframe-items' {
         cold?: number;
         viral?: number;
         gas?: number;
-        void?: number
+        void?: number;
+        total?: number | null;
     }
 
     interface Drop {
